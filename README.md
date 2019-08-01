@@ -4,7 +4,6 @@
 In this direcotry there are 4 folders:
 - **Codes:** Contains the codes that are developed and used for the analyses conducted in the paper
 - **Figures:** Contains paper figures (main and supplementary)
-- **References:** Contains all of the references information in this paper
 - **Data\_Files:** Contains all the required data for analysis and development of the studied models.  
 -----------------------------------------------------------------------------------------------------------------------------------------
 
