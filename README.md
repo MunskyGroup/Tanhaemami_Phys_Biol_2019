@@ -1,5 +1,6 @@
 ### **Using flow cytometry and multistage machine learning to discover label-free signatures of algal lipid accumulation**  
-#### Mohammad Tanhaemami *et al* 2019 *Phys. Biol.* **16** 055001 https://doi.org/10.1088/1478-3975/ab2c60
+#### Mohammad Tanhaemami *et al* 2019 *Phys. Biol.* **16** 055001  
+https://doi.org/10.1088/1478-3975/ab2c60
 -----------------------------------------------------------------------------------------------------------------------------------------
 In this direcotry there are 3 folders:
 - **Codes:** Contains the codes that are developed and used for the analyses conducted in the paper.
