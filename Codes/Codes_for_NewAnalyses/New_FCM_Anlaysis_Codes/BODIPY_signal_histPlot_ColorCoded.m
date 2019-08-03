@@ -5,7 +5,7 @@
 % But with color coding with respect to time
 % Just run this to see theresulting figure
 path(path,'./FCM_Functions'); %Path to Test_Codes.
-load('FCM_data/FCM_Pico_Replica1_Data_NoZero.mat'); %Load the file Pico_Data.mat.
+load('../../../Data_Files/Data_NewAnalyses/FCM_Pico_Replica1_Data_NoZero.mat'); %Load the file Pico_Data.mat.
 TargetSet = [3,9]; %Enter the target parmeters' index (here 3 and 9 are targets).
 TargetInd = TargetSet(1,1); %Target the user looks for. Alternative: Target_Ind = Targets_Set(1,2);
 TimePoint = 12; %Enter number of time points (days after nitorgen starvation) to be selected.
