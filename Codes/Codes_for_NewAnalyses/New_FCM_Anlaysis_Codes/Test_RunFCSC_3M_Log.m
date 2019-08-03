@@ -9,7 +9,7 @@
 %% INITIALIZATION, LOAD THE DESIRED DATABASE, AND ADD REQUIRED PATHS
 clear; close all; clc;
 warning('off');
-load('FCM_data/FCM_Pico_Replica1_Data_NoZero.mat'); %Load the file Pico_Data.mat.
+load('../../../Data_Files/Data_NewAnalyses/FCM_Pico_Replica1_Data_NoZero.mat'); %Load the file Pico_Data.mat.
 path(path,'./FCM_Functions'); %Path to Test_Codes.
 if ~exist('./Results/Object_Results','dir')
     mkdir('./Results/Object_Results');
