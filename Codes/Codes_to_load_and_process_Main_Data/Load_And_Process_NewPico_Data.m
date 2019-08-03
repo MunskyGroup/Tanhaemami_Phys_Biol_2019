@@ -8,6 +8,7 @@
 % DATA.Time(k) will be the time in days since the first time point.
 % DATA.Stained(k).DATA will be the data at the kth time point.
 clear; clc;
+dir = '../../Data_Files/Data_main/';
 %Dates at which experiments are performed.
 dates = {'072716','081516','072816','081616','080116','081716',...
     '080216','081816','080316','081916','080516','082216',...
@@ -37,9 +38,9 @@ for Species = {'Pico'} %Initialize species names in DATA.
     for Date = dates %For each of the dates experiments are run.
         for Un_Prefix = prefix_un
             for m=1:size(Un_Prefix,1)
-                File_unstained = ['../../Data_Files/Data_main/',Un_Prefix{m,1},' ',Date{1},' ',Species{1},' un.fcs.csv']; %Save unstained data in a ".csv" file.
+                File_unstained = [Un_Prefix{m,1},' ',Date{1},' ',Species{1},' un.fcs.csv']; %Save unstained data in a ".csv" file.
                 try
-                    X = importdata(File_unstained); %Import saved file for unstained as "X".
+                    X = importdata([dir,File_unstained]); %Import saved file for unstained as "X".
                     DATA.FeatureNames = X.colheaders; %Assgin header of each column of X to DATA.FeatureNames.
                     DATA.Unstained(k,m).DATA = X.data; %Assign data stored in X to DATA.Unstained(k).DATA.
                     DATA.Max = max(DATA.Max,max(X.data)); %Compare maximum of DATA and the data stored in X and assign the bigger value to DATA.Max.
@@ -51,9 +52,9 @@ for Species = {'Pico'} %Initialize species names in DATA.
         end
         for St_Prefix = prefix_st
             for m=1:size(St_Prefix,1)
-                File_stained = ['../../Data_Files/Data_main/',St_Prefix{m,1},' ',Date{1},' ',Species{1},' st.fcs.csv']; %Save stained data in a ".csv" file.
+                File_stained = [St_Prefix{m,1},' ',Date{1},' ',Species{1},' st.fcs.csv']; %Save stained data in a ".csv" file.
                 try
-                    X = importdata(File_stained); %Import saved file for stained as "X".
+                    X = importdata([dir,File_unstained]); %Import saved file for stained as "X".
                     DATA.FeatureNames = X.colheaders; %Assgin header of each column of X to DATA.FeatureNames.
                     DATA.Stained(k,m).DATA = X.data; %Assign data stored in X to DATA.Unstained(k).DATA.
                     DATA.Max = max(DATA.Max,max(X.data)); %Compare maximum of DATA and the data stored in X and assign the bigger value to DATA.Max.
