@@ -7,7 +7,7 @@
 % The structure name is "DATA" and it is saved as "FCM_Pico_Replica1_Data_NoZero" in the current directory.
 clear; clc;
 Replica = 1; % For the other 2 replates this code should me modified according to the available *.csv files!!
-dir = ['./Replica',num2str(Replica),'/'];
+dir = ['../../../../Data_Files/Data_NewAnalyses/New_FCM_Anlaysis_Codes/FCM_data/Replica',num2str(Replica),'/'];
 %Dates at which experiments are performed:
 dates = {'033019','040319','040819','041219','041919','042219','040119','040519','041019','041519','042419','041719'};
 prefix_un = cell(0); % Pre-alocate prefixes for speed
