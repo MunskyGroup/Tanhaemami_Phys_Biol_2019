@@ -10,6 +10,6 @@ In this direcotry there are 3 folders:
 Before proceeding, please make sure you have access to the data files that are stored in a folder with the name **Data_Files**.  
 
 #### Data\_Files:  
-In this folder, which is provided to the user via this [*external link*](https://colostate-my.sharepoint.com/:u:/g/personal/mtanha_colostate_edu/EUg3wuFUVp5Lo9hxVxBXV6MBWcvaO99eaZ1MriHnS178mA?e=6VoJHc), are the data files that need to be placed in the correct directory prior to analysis. Download the zipped folder from the link provided above and extract it directly to the **current** directory. The folder **Data\_Files** contains all the required data for analyses. It should be *here in the current directory* for the codes to work properly.  
+In this folder, which is provided to the user via this [*external link*](https://colostate-my.sharepoint.com/:u:/g/personal/mtanha_colostate_edu/EUg3wuFUVp5Lo9hxVxBXV6MBWcvaO99eaZ1MriHnS178mA?e=6VoJHc), are the data files. Download the zipped folder from the link provided above and extract it directly to the **current** directory. The folder **Data\_Files** should be *here in the current directory* for the codes to work properly.  
 
 After making sure you have access to the **Data\_Files** folder, please proceed by going to the **Codes** folder.
