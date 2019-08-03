@@ -6,7 +6,7 @@ Run this script to see the BODIPY signals collected by the flow cytometer.
 Run this script (which automatically uses the *FCSC\_3M\_Log.m* file as its object) to analyze our main flow cytometry data and see the results at different computation steps. This script provides a weighted model at its last step in our strategy.
 
 ### The Directories You See Here
-After you run the main script as instructed above (number 2), you can go to the following directories to discover more and see the results: 
+After you run the main script as instructed above (number 2), you can go to the following directories to discover more and see the results:  
 **Codes\_for\_figures**  
 Go to this directory to generate the figures (as you see in the paper and the supplementary materials).  
 **Codes\_for\_NewAnalyses**  
