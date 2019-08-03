@@ -37,7 +37,7 @@ for Species = {'Pico'} %Initialize species names in DATA.
     for Date = dates %For each of the dates experiments are run.
         for Un_Prefix = prefix_un
             for m=1:size(Un_Prefix,1)
-                File_unstained = [Un_Prefix{m,1},' ',Date{1},' ',Species{1},' un.fcs.csv']; %Save unstained data in a ".csv" file.
+                File_unstained = ['../../Data_Files/Data_main/',Un_Prefix{m,1},' ',Date{1},' ',Species{1},' un.fcs.csv']; %Save unstained data in a ".csv" file.
                 try
                     X = importdata(File_unstained); %Import saved file for unstained as "X".
                     DATA.FeatureNames = X.colheaders; %Assgin header of each column of X to DATA.FeatureNames.
@@ -51,7 +51,7 @@ for Species = {'Pico'} %Initialize species names in DATA.
         end
         for St_Prefix = prefix_st
             for m=1:size(St_Prefix,1)
-                File_stained = [St_Prefix{m,1},' ',Date{1},' ',Species{1},' st.fcs.csv']; %Save stained data in a ".csv" file.
+                File_stained = ['../../Data_Files/Data_main/',St_Prefix{m,1},' ',Date{1},' ',Species{1},' st.fcs.csv']; %Save stained data in a ".csv" file.
                 try
                     X = importdata(File_stained); %Import saved file for stained as "X".
                     DATA.FeatureNames = X.colheaders; %Assgin header of each column of X to DATA.FeatureNames.

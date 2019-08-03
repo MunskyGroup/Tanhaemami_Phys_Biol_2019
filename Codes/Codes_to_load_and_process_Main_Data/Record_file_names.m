@@ -26,7 +26,7 @@ s=1;
 for Date = dates %For each of the dates experiments are run.
     for Un_Prefix = prefix_un
         for m=1:size(Un_Prefix,1)
-            File_unstained{n,1} = [Un_Prefix{m,1},' ',Date{1},' ',Species{1},' un.fcs.csv']; %Save unstained data in a ".csv" file.
+            File_unstained{n,1} = ['../../Data_Files/Data_main/',Un_Prefix{m,1},' ',Date{1},' ',Species{1},' un.fcs.csv']; %Save unstained data in a ".csv" file.
             if exist(File_unstained{n,1},'file')
                 FUL{s,1} = File_unstained{n,1};
                 s=s+1;
@@ -41,7 +41,7 @@ s=1;
 for Date = dates %For each of the dates experiments are run.
     for St_Prefix = prefix_st
         for m=1:size(St_Prefix,1)
-            File_stained{n,1} = [St_Prefix{m,1},' ',Date{1},' ',Species{1},' st.fcs.csv']; %Save unstained data in a ".csv" file.
+            File_stained{n,1} = ['../../Data_Files/Data_main/',St_Prefix{m,1},' ',Date{1},' ',Species{1},' st.fcs.csv']; %Save unstained data in a ".csv" file.
             if exist(File_stained{n,1},'file')
                 FL{s,1} = File_stained{n,1};
                 s=s+1;
