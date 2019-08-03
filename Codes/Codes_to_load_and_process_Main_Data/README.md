@@ -1,1 +1,1 @@
-- Run the script **Load\_And\_Process\_NewPico\_Data.m** to read the *\*.csv* files in the Data\_Files directory and creat a struct *.mat file.
+- Run the script **Load\_And\_Process\_NewPico\_Data.m** to read the **.csv* files in the Data\_Files directory and creat a struct *.mat file.
